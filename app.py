@@ -23,10 +23,12 @@ while running:
 
     elif  action == "show":
         print("Your To-Do List \n",  tasks)
-
+        
     elif  action == "quit":
         running = False
-        print("Your To-Do List \n",  tasks)
+        print(task)
+        print("Your To-Do List)
+        
         
 
 if __name__ == '__main__':
