@@ -1,12 +1,9 @@
-from flask import Flask
+app = Flask(__name__)
 
-app = Flask(__ToDoList__)
 @app.route('/')
-
-
-print("To-Do List")
- 
-while True:
+def todo_list():
+    return "To-Do List"
+ while True:
  
  tasks = []
 
@@ -25,6 +22,6 @@ while True:
     
   elif  action == "quit":
     print("Your To-Do List \n",  tasks)
-     
-if __ToDoList__ == '__main__':
-  app.run(debug=True, host="0.0.0.0", port=8080)
+
+if __name__ == '__main__':
+    app.run(debug=True, host="0.0.0.0", port=8080)
